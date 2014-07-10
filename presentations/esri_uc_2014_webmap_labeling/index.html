@@ -36,13 +36,15 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	</head>
 
 	<body>
 
 		<div class="reveal">
 			<div class="slides" >
-				<section width="100%" height="1000">
+				<section width="100%" height="1000" class="fullscreen">
 					<h1>Labeling Strategies</h1>
 					<h3>w/ Esri JavaScript APIs</h3>
 					<p>
@@ -59,6 +61,32 @@
 					</p>
 					<img class="logo" src="http://www.blueraster.com/wp-content/themes/blueraster/images/logo.png"/>
 				</section>
+
+				<!-- EXAMPLES -->
+
+				<!-- position:absolute; top:0; bottom:0; width:100%; -->
+
+				<section class="present">
+					<h2><a>JavaScript!</a></h2>
+				</section>
+
+
+				<section class="present" style="top: -198.5px; display: block;"><h3><a>Client & Server</a></h3>
+					<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/468px-Client-server-model.svg.png" />
+
+					<p>Label server-side w/ <a href="">Dynamic Map Services</a> and <a href="">Tiled Map Services</a></p>
+
+				</section>
+
+				<section class="present" style="top: -198.5px; display: block;"><h3><a>Client & Server</a></h3>
+					<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/468px-Client-server-model.svg.png" />
+
+					<p>Label client-side w/ <a href="">Feature Layer</a> and <a href="">Label Layer</a></p>
+
+				</section>
+
+
+
 				<section data-background="#007777">
 					<h3>Label Element</h3>
 					<section>
@@ -77,12 +105,47 @@
 						<h3>Placement</h3>
 					</section>
 				</section>
-				<section>
+				<section data-background="#007777">
 					<h3>Tiled Labels</h3>
 				</section>
-				<section>
+				<section data-background="#007777">
+					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_leaflet_basemap_example.html">
+                    </iframe>
+				</section>
+				<section data-background="#007777">
+					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_leaflet_labels_only.html">
+                    </iframe>
+				</section>
+				<section data-background="#007777">
+					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_leaflet_basemap_example2.html">
+                    </iframe>
+				</section>
+				<section data-background="#007777">
+					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_leaflet_basemap_example3.html">
+                    </iframe>
+				</section>
+				<section data-background="#007777">
+					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_leaflet_basemap_example4.html">
+                    </iframe>
+				</section>
+				<section data-background="#007777">
+					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_leaflet_basemap_example5.html">
+                    </iframe>
+				</section>
+				
+				<section data-background="#AA6779">
 					<h3>Dynamic Labels</h3>
 				</section>
+				<section data-background="#AA6779">
+					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_leaflet_dynamic_labeling.html">
+                    </iframe>
+				</section>
+				<section data-background="#AA6779">
+					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_leaflet_dynamic_labels_only.html">
+                    </iframe>
+				</section>
+
+
 				<section data-background="#FFFFFF">
 					<h3>Versitile Base</h3>
 				</section>
@@ -90,7 +153,11 @@
 					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_dojo_simple_base1.html">
                     </iframe>
 				</section>
-				<section data-background="#007777">
+				<section data-background="#D9853B" class="fullscreen">
+					<iframe width="100%" height="900" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_dojo_simple_base2.html">
+                    </iframe>
+				</section>
+				<section data-background="#D9853B">
 					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_dojo_simple_base2.html">
                     </iframe>
 				</section>
@@ -98,25 +165,14 @@
 					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_dojo_simple_base2.html">
                     </iframe>
 				</section>
-				<section data-background="#7D1935">
-					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_dojo_simple_base2.html">
-                    </iframe>
-				</section>
 
-				<section data-background="#007777">
-					<h3>Tiled Labels</h3>
-				</section>
-				<section data-background="#007777">
-					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_leaflet_labels_only.html">
-                    </iframe>
-				</section>
-				<section data-background="#007777">
-					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_leaflet_basemap_example.html">
-                    </iframe>
-				</section>
+				
+				
+
+				
 
 				<section>
-					<h3>Client-side Labels</h3>
+					<h3>Client-side Labeling</h3>
 				</section>
 				<section>
 					<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="examples/esri_dojo_label_layer.html">
@@ -136,6 +192,10 @@ map.addLayer(labels);
 					</code></pre>
 					
 				</section>
+				<section>
+					<h3>Scale Dependant Rendering</h3>
+				</section>
+				
 
 				<section>
 					<h3>Client-side Drop Shadow</h3>
@@ -168,7 +228,7 @@ map.addLayer(labels);
 </style>
 
 					</code></pre>
-					<a href="http://github.com/patrickalrt">http://github.com/patrickalrt</a>
+					<a href="http://github.com/patrickalrt"><small>http://github.com/patrickalrt</small></a>
 				</section>
 
 
@@ -517,6 +577,16 @@ function linkify( selector ) {
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
+
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				var frames = $(event.currentSlide).find("iframe");
+				if(frames && frames[0]) {
+					if(frames[0].src.indexOf("_dojo_") > -1) {
+						frames[0].contentDocument.location.reload(true);
+						console.log('reloaded frame');
+					} 
+				}
+			} );
 
 		</script>
 
