@@ -1,0 +1,13 @@
+.reveal .slides>section, .reveal .slides>section>section {
+	padding: 0px 0px 0px 0px;
+}
+
+a {
+	color: #70C2F8 !important;
+}
+
+.logo {
+	background-color: #eeeeee;
+	border-width: thick;
+	border-color: #eeeeee;
+}
